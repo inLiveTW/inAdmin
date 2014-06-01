@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="inlive">
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>inAdmin</title>
+
+    <link href="style/bootstrap.css" rel="stylesheet">
+    <link href="style/dashboard.css" rel="stylesheet">
+    <link href="style/inadmin.css" rel="stylesheet">
+
+    <script src="script/angular.js"></script>
+    <script src="script/angular-ui-router.js"></script>
+    <script src="script/jquery.js"></script>
+    <script src="script/async.js"></script>
+    <script src="script/parse.js"></script>
+    
+    <script src="script/bootstrap.js"></script>
+
+    <script src="script/app.js"></script>
+    <script src="script/service.js"></script>
+    <script src="script/controller.js"></script>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">inAdmin</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">About Me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div ui-view></div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<div class="row login">
+  <div class="col-md-3">
+    <img class="login-icon" src="LiveTW.png" />
+    <h4 class="login-tip">
+        歡迎來到
+        <span>inAdmin</span>
+    </h4>
+  </div>
+  <div class="col-md-9 well">
+    <form class="form-horizontal" name="loginForm" role="form" ng-submit="login(user)">
+      <div class="form-group">
+        <div class="col-sm-12">
+          <input type="text" class="form-control" placeholder="Username" ng-model="user.username" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-12">
+          <input type="password" class="form-control" placeholder="Password" ng-model="user.password" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-12">
+          <button ng-disabled="loginForm.$invalid" data-loading-text="Logging..." id="login" type="submit" class="btn btn-danger btn-lg btn-block" >Log in</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
